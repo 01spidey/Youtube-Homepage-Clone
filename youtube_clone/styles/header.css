@@ -1,0 +1,196 @@
+.header{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    
+    border-bottom: 1px solid rgb(215, 212, 212);
+    background-color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    position: fixed;
+    z-index: 100;
+    top:0px;
+    left: 0px;
+    right: 0px;
+    height: 40px;
+}
+
+
+.left-section{
+    display: flex;
+    width: 180px;
+    align-items: center;
+}
+
+.ham-frame{
+    height:25px;
+    margin: 0px 20px 0px 10px;
+    cursor: pointer;
+}
+
+.ytframe{
+    height: 20px;
+    cursor: pointer;
+}
+
+/* ------------------------------------------------------------------------- */
+
+.middle-section{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.search-bar{
+    width: 100%;
+    font-size: 16px;
+    padding-left: 20px;
+    height: 36.5px;
+    border: 1px solid rgb(215, 212, 212);
+    box-shadow: inset 0.5px 0.5px 1px 0.5px rgba(0,0,0,0.15);
+    outline: none;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.search-bar::placeholder{color: #615d5daa;}
+
+.search-bar:focus{
+    border: 1px solid blue;
+}
+
+.search-frame{
+    height: 25px;   
+}
+
+.mic-frame{
+    height: 60%;
+}
+
+.search-btn{
+    position: relative;
+    height: 40px;
+    width: 75px;
+    border: 1px solid #aaa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -1px;
+    transition: background-color 0.2s;
+    border-radius: 0px 20px 20px 0px;
+    cursor: pointer;
+}
+
+.search-btn:hover,
+.mic-btn:hover{ 
+    background-color: rgb(215, 212, 212);
+}
+
+.search-btn .tooltip,
+.mic-btn .tooltip{
+    position: absolute;
+    bottom: 0px;
+    margin-bottom: -35px;
+    
+    background-color: gray;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.search-btn:hover .tooltip,
+.mic-btn:hover .tooltip{
+    opacity: 1;
+    transition: 0.2s;
+}
+
+.mic-btn{
+    position: relative;
+    
+    height: 40px;
+    width: 53px;
+    border-radius: 40px;
+    border: none;
+    margin-left: 10px;
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(245,245,245);
+    cursor: pointer;
+}
+
+
+/* ------------------------------------------------------------------ */
+
+.right-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+    width: 180px;
+    margin-right: 20px;
+}
+
+.right-icon{
+    height: 24px;
+    cursor: pointer;
+}
+
+.notification-count{
+    position: absolute;
+    top:-2px;
+    right: -4px;
+
+    background-color: rgb(200,0,0);
+    color: white;
+    font-weight: 500;
+    font-size: 10px;
+    padding: 2px 5px 2px 5px;
+    border-radius: 30px;
+}
+
+.bell,.apps,.create{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bell .tooltip,
+.apps .tooltip,
+.create .tooltip{
+    position: absolute;
+    bottom: 0px;
+    margin-bottom: -45px;
+    
+    background-color: gray;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.bell:hover .tooltip,
+.apps:hover  .tooltip,
+.create:hover .tooltip{
+    opacity: 1;
+    transition: 0.2s;
+}
+

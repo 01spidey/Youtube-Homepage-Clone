@@ -1,0 +1,45 @@
+.tag-layout{
+    height: 40px;
+    position: fixed;
+    top:55px;
+    padding: 10px 30px 10px 40px;
+    left: 80px;
+    right: 0px;
+    z-index: 90;
+
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.tag{
+    align-items: center;
+    padding: 7px 10px 7px 10px;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #434444;
+    border: none;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.tag:hover{
+    background-color: rgba(1, 1, 1, 0.858);
+    transition: 0.15s;
+}
+
+.btn-frame{
+    position: absolute;
+    z-index: 80;
+    height: 25px;
+    width: 25px;
+    border: none;
+    border-radius: 20px;
+    font-size: 17px;
+}

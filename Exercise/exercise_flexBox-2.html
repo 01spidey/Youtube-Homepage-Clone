@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .box{
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            margin: 10px;
+            background-color: aqua;
+            flex: 1;
+        }
+
+        .layout{
+            display: flex;
+            height: 1000px;
+            width: 100%;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .dialog-layout{
+            display: flex;
+            position: fixed;
+            top:0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            background-color: rgba(0,0,0,0.5);
+            align-items: center;
+            justify-content: center;
+        }
+
+        .dialog-box{
+            display: flex;
+            flex-direction: column;
+            height: 100px;
+            width: 300px;
+            background-color: white;
+            justify-content: space-between;
+            padding: 10px 10px 20px 20px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.3);
+        }
+
+        button{
+            width: fit-content;
+            padding: 5px 12px 5px 12px;
+        }
+
+
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="layout">    
+        <div class="box">Div 1</div>
+        <div class="box">Div 2</div>
+        <div class="box">Div 3</div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <div class="dialog-layout">
+        <div class="dialog-box">
+            <h3 style="margin: 0px;">Modal Title</h3>
+            <p>This is  Modal</p>
+            <button>Close</button>
+        </div>
+    </div>
+</body>
+</html>
